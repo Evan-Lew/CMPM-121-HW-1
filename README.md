@@ -10,6 +10,7 @@ because it is on a box giving what it seems like a speech to the rest of the ani
 <ol>
     <li>Tree (Fantasy Forest Environment - Free Demo)</li>
     <li>Big Old House (Village Houses Pack)</li>
+    <li>Old House (Village Houses Pack)</li>
     <li>Basket (Free Hut Pack)</li>
     <li>Goat head (Free Hut Pack)</li>
     <li>Broom (Free Hut Pack)</li>
