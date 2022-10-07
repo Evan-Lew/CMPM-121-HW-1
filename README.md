@@ -6,6 +6,7 @@ a scene inspired by the book Animal Farm. I added various types of rocks and tre
 houses I added boxes, crates, a broom, and more to make the house more lived in. Lastly, I added the animals. The pig is the main character 
 because it is on a box giving what it seems like a speech to the rest of the animals. In my head the pig is talking about how all the animals have to escape the farm before they turn into the goathead, which is hanging on one of the houses.</p>
 
+## List of assets
 <ol>
     <li>Tree (Fantasy Forest Environment - Free Demo)</li>
     <li>Big Old House (Village Houses Pack)</li>
