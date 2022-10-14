@@ -488,8 +488,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cameras:
-  - {fileID: 963194227}
   - {fileID: 884242839}
+  - {fileID: 963194227}
   - {fileID: 792229022}
   - {fileID: 786263970}
 --- !u!4 &255968805
