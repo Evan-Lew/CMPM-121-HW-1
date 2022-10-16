@@ -26,4 +26,4 @@ because it is on a box giving what it seems like a speech to the rest of the ani
     <li>Night Skybox (Fantasy Skybox Free)</li>
 </ol>
 
-<h3>Github - https://github.com/Evan-Lew/CMPM-121-HW-1</h3>
+<h3>Video - https://youtu.be/wG3jeyLEiPA</h3>
