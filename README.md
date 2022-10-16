@@ -25,4 +25,5 @@ because it is on a box giving what it seems like a speech to the rest of the ani
     <li>Terrain (Made by me and texture from ADG_Textures as Ground 5_Diffuse)</li>
     <li>Night Skybox (Fantasy Skybox Free)</li>
 </ol>
-### Github - https://github.com/Evan-Lew/CMPM-121-HW-1
+
+<h3>Github - https://github.com/Evan-Lew/CMPM-121-HW-1</h3>
