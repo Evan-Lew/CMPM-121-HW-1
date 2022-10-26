@@ -7,6 +7,9 @@ public class LightingManager : MonoBehaviour
     // References
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private LightingPreset Preset;
+
+    public GameObject reference;
+    private ChangeCycleButton cycle_script;
     // Variables
     [SerializeField, Range(0, 24)] private float TimeOfDay;
 
@@ -28,19 +31,24 @@ public class LightingManager : MonoBehaviour
             UpdateLighting(TimeOfDay / 24f);
         }
     }
-    
+
     private void UpdateLighting(float timePercent)
     {
-        RenderSettings.ambientLight = Preset.AmbientColor.Evaluate(timePercent);
-        RenderSettings.fogColor = Preset.Fogcolor.Evaluate(timePercent);
-
-        if (DirectionalLight != null)
+        cycle_script = reference.GetComponent<ChangeCycleButton>();
+        if (cycle_script.click != 1)
         {
-            DirectionalLight.color = Preset.DirectionalColor.Evaluate(timePercent);
-            DirectionalLight.transform.localRotation = Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 170, 0));
+            RenderSettings.ambientLight = Preset.AmbientColor.Evaluate(timePercent);
+            RenderSettings.fogColor = Preset.Fogcolor.Evaluate(timePercent);
+
+            if (DirectionalLight != null)
+            {
+                DirectionalLight.color = Preset.DirectionalColor.Evaluate(timePercent);
+                DirectionalLight.transform.localRotation =
+                    Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 170, 0));
+            }
         }
     }
-    
+
     // Try to find a directional light to use if we haven't set one
     private void OnValidate()
     {
