@@ -1,4 +1,4 @@
-# CMPM-121-HW-1
+# CMPM-121-HW-1-AND-2
  
 <p>My scene is a little farmhouse surrounded by hills. I started with the idea of wanting to make my own terrain, and I knew I wanted
 some buildings which led me to find these two farm type of houses. After seeing those houses on the Unity store I got inspired to make 
@@ -24,8 +24,10 @@ because it is on a box giving what it seems like a speech to the rest of the ani
     <li>Sheep (Vertex Color Farm Animals)</li>
     <li>Terrain (Made by me and texture from ADG_Textures as Ground 5_Diffuse)</li>
     <li>Night Skybox (Fantasy Skybox Free)</li>
+    <li>Utensils (Fantasy interor props free)</li>
+    <li>Furniture (Raw Wooden Furniture Free)</li>
 </ol>
 
 <p>Credit: Followed this Youtube tutorial for the day night cycle - https://www.youtube.com/watch?v=m9hj9PdO328 </p>
 
-<h3>Video - https://youtu.be/wG3jeyLEiPA</h3>
+<h3>HW 1 Video - https://youtu.be/wG3jeyLEiPA</h3>
