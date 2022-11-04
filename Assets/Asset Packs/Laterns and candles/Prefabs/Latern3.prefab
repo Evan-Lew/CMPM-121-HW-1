@@ -263,7 +263,6 @@ GameObject:
   - component: {fileID: 4370969566577522}
   - component: {fileID: 212462245177650286}
   - component: {fileID: 95253024848098044}
-  - component: {fileID: 114557577389853534}
   m_Layer: 0
   m_Name: red_flame_0
   m_TagString: Untagged
@@ -358,16 +357,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114557577389853534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729665029767850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03d835f862f58074b859165457db4dde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraToLookAt: {fileID: 0}

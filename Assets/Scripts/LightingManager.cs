@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,12 +8,13 @@ public class LightingManager : MonoBehaviour
     // References
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private LightingPreset Preset;
-
-    public GameObject reference;
-    private ChangeCycleButton cycle_script;
+    public GameObject UIDocument;
+    private ChangeLightButton light_script;
+    
     // Variables
     [SerializeField, Range(0, 24)] private float TimeOfDay;
-
+    public List<Light> Lights;
+    
     private void Update()
     {
         if (Preset == null)
@@ -34,18 +36,32 @@ public class LightingManager : MonoBehaviour
 
     private void UpdateLighting(float timePercent)
     {
-        cycle_script = reference.GetComponent<ChangeCycleButton>();
-        if (cycle_script.click != 1)
+        // Update On/Off/Dim
+        light_script = UIDocument.GetComponent<ChangeLightButton>();
+        if (light_script.click == 1)
         {
-            RenderSettings.ambientLight = Preset.AmbientColor.Evaluate(timePercent);
-            RenderSettings.fogColor = Preset.Fogcolor.Evaluate(timePercent);
+            Lights.ForEach(light =>light.enabled = false);
+        }
 
-            if (DirectionalLight != null)
-            {
-                DirectionalLight.color = Preset.DirectionalColor.Evaluate(timePercent);
-                DirectionalLight.transform.localRotation =
-                    Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 170, 0));
-            }
+        if (light_script.click == 2)
+        {
+            Lights.ForEach(light =>light.enabled = true);
+            Lights.ForEach(light =>light.GetComponent<Light>().intensity = 5);
+        }
+
+        if (light_script.click == 0)
+        {
+            Lights.ForEach(light =>light.GetComponent<Light>().intensity = 2);
+        }
+        
+        // Update for DayNightCycle
+        RenderSettings.ambientLight = Preset.AmbientColor.Evaluate(timePercent);
+        RenderSettings.fogColor = Preset.Fogcolor.Evaluate(timePercent);
+        if (DirectionalLight != null)
+        {
+            DirectionalLight.color = Preset.DirectionalColor.Evaluate(timePercent);
+            DirectionalLight.transform.localRotation =
+                Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 170, 0));
         }
     }
 

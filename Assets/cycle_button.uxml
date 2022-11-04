@@ -1,5 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="Frame">
-        <ui:Button text="Change Day-Night Cycle" display-tooltip-when-elided="true" name="Button" enable-rich-text="true" style="left: 2.5%; top: 200%; font-size: 30px; background-color: rgb(115, 99, 57); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; -unity-font: url(&apos;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#Arial&apos;); color: rgb(0, 0, 0); height: 62px; width: 369px; -unity-text-outline-color: rgb(0, 0, 0); border-left-color: rgb(75, 27, 0); border-right-color: rgb(75, 27, 0); border-top-color: rgb(75, 27, 0); border-bottom-color: rgb(75, 27, 0);" />
-    </ui:VisualElement>
-</ui:UXML>

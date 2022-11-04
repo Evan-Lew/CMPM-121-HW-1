@@ -27,8 +27,16 @@ public class SwitchCamera : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            GameObject.Find("Master Timeline").GetComponent<PlayableDirector>().enabled = true;
             EnableCamera(3);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            EnableCamera(4);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            GameObject.Find("Master Timeline").GetComponent<PlayableDirector>().enabled = true;
+            EnableCamera(5);
         }
     }
 

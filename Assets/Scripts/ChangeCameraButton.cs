@@ -33,7 +33,8 @@ public class ChangeCameraButton : MonoBehaviour
     private void ChangeCamera(){
         EnableCamera(click);
         click++;
-        if (click == 4)
+        // For the camera animation
+        if (click == 6)
         {
             GameObject.Find("Master Timeline").GetComponent<PlayableDirector>().enabled = true;
         }
@@ -41,8 +42,8 @@ public class ChangeCameraButton : MonoBehaviour
         {
             GameObject.Find("Master Timeline").GetComponent<PlayableDirector>().enabled = false;
         }
-        // reset counter so it is not out of bounds (only have 4 cameras)
-        if(click > 3){
+        // Reset counter so it is not out of bounds (only have 6 cameras)
+        if (click > 5){
             click = 0;
         }
     }

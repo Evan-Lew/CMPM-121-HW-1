@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class ChangeCycleButton : MonoBehaviour
+public class ChangeLightButton : MonoBehaviour
 {
     // create frame and button variables 
     private VisualElement frame;
@@ -28,7 +28,7 @@ public class ChangeCycleButton : MonoBehaviour
     private void ChangeCycle()
     {
         click++;
-        if (click > 1)
+        if (click > 2)
         {
             click = 0;
         }
