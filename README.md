@@ -1,4 +1,4 @@
-# CMPM-121-HW-1-AND-2
+# CMPM-121 HW 1 AND 2
  
 <p>My scene is a little farmhouse surrounded by hills. I started with the idea of wanting to make my own terrain, and I knew I wanted
 some buildings which led me to find these two farm type of houses. After seeing those houses on the Unity store I got inspired to make 
