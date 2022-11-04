@@ -26,6 +26,7 @@ because it is on a box giving what it seems like a speech to the rest of the ani
     <li>Night Skybox (Fantasy Skybox Free)</li>
     <li>Utensils (Fantasy interor props free)</li>
     <li>Furniture (Raw Wooden Furniture Free)</li>
+    <li>Particles (Unity Particle Pack)</li>
 </ol>
 
 <p>Credit: Followed this Youtube tutorial for the day night cycle - https://www.youtube.com/watch?v=m9hj9PdO328 </p>
