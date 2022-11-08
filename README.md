@@ -34,3 +34,4 @@ because it is on a box giving what it seems like a speech to the rest of the ani
 <p>Credit: Followed this Youtube tutorial for the day night cycle - https://www.youtube.com/watch?v=m9hj9PdO328 </p>
 
 <h3>HW 1 Video - https://youtu.be/wG3jeyLEiPA</h3>
+<h3>HW 2 Video - https://youtu.be/Ui4IYWDiKTo</h3>
